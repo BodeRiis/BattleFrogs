@@ -1,0 +1,17 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f3f3;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.fas {
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+}
