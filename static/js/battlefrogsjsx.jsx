@@ -9,7 +9,7 @@ function GenerateBoard(props) {
             for (let col = 0; col < 10; col++) {
 
                 thisRow.push(
-                <i className="fas fa-water" key={row.toString().concat(col.toString())}></i>
+                <i className="fas fa-leaf" key={row.toString().concat(col.toString())} onClick={props.clickOnLeaf}></i>
             );
         }  
         water.push(<div className="game-row" key={'row'.concat(row.toString())}>{thisRow}</div>);
@@ -22,10 +22,32 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    userHits : 0,
-    botHits : 0,
+    userHits: 0,
+    gameRounds: 0,
+    botHits: 0,
     };
+
+    this.lookUnderLeaf = this.lookUnderLeaf.bind(this);
 }
+
+    lookUnderLeaf(evt) {
+        console.log('Leaf was clicked');
+        console.log(evt.target.key);
+        if (['20', '21', '22'].includes(evt.target.key)) {
+            evt.target.className="fas fa-leaf";
+        } else {
+            evt.target.className="fas fa-water";
+        }
+
+
+        this.setState(prevState => {
+            console.log(prevState.gameRounds);
+
+               return {gameRounds: prevState.gameRounds + 1}
+        })
+
+    }
+
 
     render () {
     return (
@@ -33,7 +55,9 @@ class App extends React.Component {
         <div>
         <h1>BattleFrogs JSX imported!</h1>
         <div>
-            <GenerateBoard />
+            <GenerateBoard
+            clickOnLeaf={this.lookUnderLeaf}
+            />
         </div>
         </div>
 
