@@ -1,0 +1,85 @@
+// Psuedo Coding:
+
+// BattleFrogs with React JSX:
+// Two grids, each is a 10x10 2D nested list.
+// 5 ships per player:
+// carrier 5 (FrogDivision)
+// battleship 4 (FrogBrigade)
+// cruiser 3 (FrogTroop)
+// submarine 3 (FrogPlatoon)
+// destroyer 2 (FrogSquad)
+
+// Using React we will Load the App.
+// The game will be played entirely with a mouse click system.
+// Implement Drag and Drop for Frog placement, and a rotate button.
+
+// - Implement the Board. Matrix. Make it a class, have two instances of the board.
+
+
+
+
+// Psuedo Coding:
+
+// BattleFrogs with React JSX:
+// Two grids, each is a 10x10 2D nested list.
+// 5 ships per player:
+// carrier 5 (FrogDivision)
+// battleship 4 (FrogBrigade)
+// cruiser 3 (FrogTroop)
+// submarine 3 (FrogPlatoon)
+// destroyer 2 (FrogSquad)
+
+// Using React we will Load the App.
+// The game will be played entirely with a mouse click system.
+// Implement Drag and Drop for Frog placement, and a rotate button.
+
+
+
+
+//
+
+const JSX = (
+  <div id='challenge-node'>
+    <h1>Hello World</h1>
+    <p>Lets render this to the DOM</p>
+  </div>
+);
+// change code below this line
+ReactDOM.render( JSX, document.getElementById('challenge-node'));
+
+//
+
+//
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      availDays: daysweek,
+      showFlash: false
+    };
+
+    this.calendarRef = React.createRef();
+    this.changeDay = this.changeDay.bind(this);
+    this.submissionRoute = this.submissionRoute.bind(this);
+    this.renderShowFlash = this.renderShowFlash.bind(this);
+  }
+
+  //
+
+//
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return(
+  <div>
+    <h1>Hello React!</h1>
+  </div>
+    );
+  }
+};
+
+//
