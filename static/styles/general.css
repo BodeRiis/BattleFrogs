@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f3f3f3;
+    color: #DCDCDC;
+    background-color: #000000;
 }
 
 h1, h2, h3, h4, h5 {
@@ -8,6 +9,17 @@ h1, h2, h3, h4, h5 {
 
 }
 
+.fa-leaf {
+    color: #3CB371;
+}
+
+.fa-frog {
+    color: #FFD700;
+}
+
+.fa-water {
+    color: #00BFFF;
+}
 
 .fas {
     padding-top: 6px;
